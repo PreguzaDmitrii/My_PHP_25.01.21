@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    image: php:8.0.1-cli-buster
+    container_name: skillup_app
+    volumes:
+      - ./:/var/www
