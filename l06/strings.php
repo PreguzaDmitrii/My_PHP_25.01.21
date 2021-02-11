@@ -22,6 +22,8 @@ THML;
 echo $nowdoc, PHP_EOL;
 echo $heredoc, PHP_EOL;
 
+$concat = 'This print' . ' is concatenated' . PHP_EOL . 'From 2 strings' . PHP_EOL;
+echo $concat;
 
 
 
