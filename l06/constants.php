@@ -16,3 +16,5 @@ echo $salary * MY_COEFICENT, PHP_EOL;
 echo __DIR__, PHP_EOL;
 echo __FILE__, PHP_EOL;
 echo __LINE__, PHP_EOL;
+
+//require __DIR__ . '/strings.php';
