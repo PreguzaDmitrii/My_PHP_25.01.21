@@ -28,5 +28,7 @@ echo $number, PHP_EOL;
 
 $number2 = 5;
 echo $number2++ + ++$number2, PHP_EOL;
+echo ++$number2 + ++$number2, PHP_EOL;
+echo $number2++ + $number2++, PHP_EOL;
 
 
