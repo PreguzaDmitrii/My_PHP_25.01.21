@@ -21,6 +21,12 @@ $result * 2;
 $result /= 2;
 echo $result, PHP_EOL;
 
+$number = 5;
+$number++;
+$number--;
+echo $number, PHP_EOL;
 
+$number2 = 5;
+echo $number2++ + ++$number2, PHP_EOL;
 
 
