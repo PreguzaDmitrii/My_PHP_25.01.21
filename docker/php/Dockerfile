@@ -36,7 +36,7 @@ RUN pecl install -o -f xdebug \
     && rm -rf /tmp/pear
 
 COPY ./php.ini /usr/local/etc/php/
-#COPY ./www.conf /usr/local/etc/php/
+COPY ./www.conf /usr/local/etc/php/
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- \
@@ -49,11 +49,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 RUN wget https://phar.phpunit.de/phpunit-6.0.phar && \
         chmod +x phpunit-6.0.phar && \
         mv phpunit-6.0.phar /usr/local/bin/phpunit
-
-# Install codecept
-#RUN wget http://codeception.com/codecept.phar && \
-#        chmod +x codecept.phar && \
-#        mv codecept.phar /usr/local/bin/codecept
 
 RUN usermod -u 1000 www-data
 
